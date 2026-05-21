@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .services-container {
+            background-color: #ffffff;
+            border: 2px solid #2e7d32; /* Green border from your wireframe */
+            border-radius: 16px;
+            padding: 40px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2e7d32;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .services-list > li {
+            color: #1b5e20;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .sub-list {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .sub-list li {
+            position: relative;
+        }
+
+        .sub-list li::before {
+            content: "- ";
+        }
+
+        /* Navigation selector styles */
+        .navigation-box {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .dynamic-link {
+            display: inline-block;
+            color: #0277bd;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .dynamic-link:hover {
+            text-decoration: underline;
+            color: #01579b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="services-container">
+        <h2>Services Page</h2>
+        
+        <ul class="services-list">
+            <li>
+                car spaces :
+                <ul class="sub-list">
+                    <li>regular</li>
+                    <li>vip</li>
+                </ul>
+            </li>
+            <li>tracking services</li>
+            <li>camera services to monitor customer vehicles</li>
+        </ul>
+
+        <div class="navigation-box">
+            <label for="page-selector">Choose where to go next:</label>
+            <select id="page-selector" onchange="updateLink()">
+                <option value="about.html">About Page</option>
+                <option value="contact.html">Contacts Page</option>
+            </select>
+            <br>
+            <a id="dynamic-nav-link" class="dynamic-link" href="about.html">Proceed to Destination</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to update the <a> tag depending on what is selected
+        function updateLink() {
+            const selector = document.getElementById('page-selector');
+            const link = document.getElementById('dynamic-nav-link');
+            
+            // Update the href attribute
+            link.href = selector.value;
+            
+            // Optional: Update text to clearly show where it's pointing
+            const selectedText = selector.options[selector.selectedIndex].text;
+            link.innerText = `Go to ${selectedText}`;
+        }
+        
+        // Run once on load to establish initial state
+        updateLink();
+    </script>
+
+</body>
+</html>
+
