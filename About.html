@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Smart Garage</title>
+  <link rel="stylesheet" href="Assets/css/styles.css" />
 </head>
 <body>
-<div class="container">
-<!--Slideshow-->
-<div class="slideshow-container">
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\ardino.jpeg" width="200" length="200">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Smart<span>Garage</span></a>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="parking.html">Parking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">About Smart Garage</p>
+          <h1>Innovative parking for modern garages</h1>
+          <p>Smart Garage is an innovative project developed to solve parking challenges using modern technologies like IoT, sensors, automation, and real-time monitoring.</p>
+          <div class="hero-actions">
+            <a href="services.html" class="btn btn-primary">See Services</a>
+            <a href="contact.html" class="btn btn-secondary">Talk to Sales</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-image">
+            <img src="Assets/Images/hero-illustration.svg" alt="Smart Garage parking illustration" />
+          </div>
+          <div class="hero-card">
+            <p class="hero-card-title">Our mission</p>
+            <p>To create smarter, safer and more efficient parking systems for homes, offices, and public places.</p>
+            <p><strong>Vision:</strong> Contribute to smart city development through intelligent parking solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Project details</p>
+        <h2>Why this solution matters</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Project background</h3>
+          <p>Smart Garage was built to address parking inefficiencies and ensure garage managers can deliver a reliable, secure experience for every vehicle owner.</p>
+        </article>
+        <article class="card">
+          <h3>Project objectives</h3>
+          <ul class="check-list">
+            <li>Design an automated parking system</li>
+            <li>Improve parking security</li>
+            <li>Reduce time searching for parking</li>
+            <li>Introduce smart technology into traditional garages</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Key technologies</h3>
+          <ul class="check-list">
+            <li>Arduino</li>
+            <li>Ultrasonic sensors</li>
+            <li>RFID access</li>
+            <li>Servo gate control</li>
+            <li>CCTV monitoring</li>
+            <li>Web dashboard and database records</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <h2>Meet the team behind the build</h2>
+        <p>A simple, elegant system designed by a team that cares about secure, efficient parking experiences.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>System design lead</h3>
+          <p>Jane Natasha leads system architecture and is responsible for the secure control flow between parking sensors and the web dashboard.</p>
+        </div>
+        <div class="info-box">
+          <h3>Development focus</h3>
+          <p>Our team focuses on real-time parking status, secure entries, and an intuitive user interface for both operators and drivers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Smart Garage. All rights reserved.</p>
+      <p>Built for Internet Technologies Course Work.</p>
     </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\cameras.jpeg width="200" alt="cameras" length="200">
-    </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\cars in a garage.jpeg" width="200" length="200">
-    </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\gate.jpeg" alt="gate" width="200" length="200">
-    </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\networking.jpeg" alt="networking" width="200" length="200">
-    </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\rfid.jpeg" alt="rfid" width="200" length="200">
-    </div>
-    <div class="slides">
-        <img src="C:\Users\NATASHA\projects\html group project\CCTV camera.jpeg" alt="CCTV" width="200" length="200">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)"><</a>
-    <a class="next" onclick="plusSlides(1)">></a>
-</div>
-    </div>
-    <ol type="1">
-        <li><p><h4>Project Background</h4></p></li>
-    <p>Smart Garage is an innovative project devloped to solve parking challenges using modern technologies like loT, sensors,automation, and real time-time monitoring.</p>
-        <li><h4>Project Objectives</h4></li>
-        <ul type="bullet">
-            <li>To design an automated parking system</li>
-            <li>To improve parking security</li>
-            <li>To reduce time spent searching for parking</li>
-            <li>To introduce smart technology into traditional garages</li>
-        </ul>
-        <li><h4>Technologies Used</h4></li>
-        <ul type="bullet">
-            <li>Ardino</li>
-            <li>Ultrasonic Sensors</li>
-            <li>RFID Module</li>
-            <li>Servo motor for gate</li>
-            <li>CCTV Camera</li>
-            <li>Web application</li>
-            <li>Database for records</li>
-        </ul>
-        <li><h4>Mission</h4></li>
-        <p>To create smarter,safer and more efficient parking systems for homes, offices, and public places</p>
-        <li><h4>Vision</h4></li>
-            <p>To contribute to smart city development through inteligent parking solutions</p><br>
-            <b>The Team</b>
-            <figure>
-                <img src="C:\Users\NATASHA\projects\html group project\Natasha.jpg" alt="" width="200" height="200">
-                <figcaption>
-                    Jane Natasha
-                    In charge of System Design
-                </figcaption>
-            </figure>
-</ol>
+  </footer>
+
+  <script src="Assets/js/script.js"></script>
 </body>
 </html>

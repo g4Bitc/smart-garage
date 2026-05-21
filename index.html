@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Garage | Park your car with no worries</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Assets/css/styles.css" />
 </head>
 <body>
   <header class="site-header">
@@ -15,44 +15,50 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="parking.html">Parking</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="page-hero">
       <div class="container hero-grid">
-        <div class="hero-text">
+        <div class="hero-copy">
           <p class="eyebrow">Smart Parking Management</p>
           <h1>Park your car with no worries</h1>
-          <p>
-            Smart Garage helps drivers find safe, available parking slots faster while helping garage managers monitor spaces, bookings, and customer flow in real time.
-          </p>
+          <p>Smart Garage helps drivers find safe, available parking slots faster while helping garage managers monitor spaces, bookings, and customer flow in real time.</p>
           <div class="hero-actions">
             <a href="services.html" class="btn btn-primary">Explore Features</a>
             <a href="contact.html" class="btn btn-secondary">Request Demo</a>
           </div>
         </div>
-        <div class="hero-card">
-          <img src="Assets/Images/smart-garage-hero.svg" alt="Illustration of a smart garage with cars and digital parking indicators" />
+
+      
+          <div class="hero-card">
+            <p class="hero-card-title">Live slot availability</p>
+            <div class="slots-grid">
+              <div><span class="slot-label">A1</span><strong>Free</strong></div>
+              <div><span class="slot-label">A2</span><strong>Occupied</strong></div>
+              <div><span class="slot-label">B4</span><strong>Free</strong></div>
+              <div><span class="slot-label">B5</span><strong>Reserved</strong></div>
+            </div>
+            <div class="hero-info">
+              <div><strong>24/7</strong><span>Monitoring</span></div>
+              <div><strong>98%</strong><span>Accuracy</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="stats container">
-      <article>
-        <strong>24/7</strong>
-        <span>Garage monitoring</span>
-      </article>
-      <article>
-        <strong>80%</strong>
-        <span>Faster slot discovery</span>
-      </article>
-      <article>
-        <strong>100%</strong>
-        <span>Simple web access</span>
-      </article>
+      <div class="stats-grid">
+        <div class="stat-card"><strong>24/7</strong><span>Garage monitoring</span></div>
+        <div class="stat-card"><strong>80%</strong><span>Faster slot discovery</span></div>
+        <div class="stat-card"><strong>100%</strong><span>Simple web access</span></div>
+      </div>
     </section>
 
     <section class="section container">
@@ -60,31 +66,48 @@
         <p class="eyebrow">Why Smart Garage?</p>
         <h2>A simple solution for modern parking</h2>
       </div>
-      <div class="cards three-columns">
+      <div class="feature-grid">
         <article class="card">
-          <img src="Assets/Images/slot-tracking.svg" alt="Parking slot tracking icon" />
+          <img class="feature-icon" src="Assets/Images/slot-tracking.svg" alt="Slot tracking icon" />
           <h3>Slot Tracking</h3>
-          <p>View available and occupied slots clearly so drivers can make quick decisions.</p>
+          <p>View available and occupied slots clearly so drivers can make quick decisions at every visit.</p>
         </article>
         <article class="card">
-          <img src="Assets/Images/secure-parking.svg" alt="Secure parking icon" />
+          <img class="feature-icon" src="Assets/Images/secure-parking.svg" alt="Secure parking icon" />
           <h3>Secure Parking</h3>
-          <p>Keep records of vehicles, customers, and parking activity for better garage control.</p>
+          <p>Keep records of vehicles, customers, and parking activity for better garage control and auditability.</p>
         </article>
         <article class="card">
-          <img src="Assets/Images/team-collaboration.svg" alt="Team collaboration icon" />
+          <img class="feature-icon" src="Assets/Images/team-collaboration.svg" alt="Collaboration icon" />
           <h3>Open Collaboration</h3>
-          <p>Built for GitHub contributions through pull requests, issues, and team improvements.</p>
+          <p>Build and improve the site with GitHub contributions, issues, and pull requests from your team.</p>
         </article>
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container cta-box">
+    <section class="section container">
+      <div class="section-heading">
+        <h2>Your garage, connected and secure</h2>
+        <p>Smart controls, automatic check-in, secure access and real-time parking visibility in one platform.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Real-time monitoring</h3>
+          <p>Get live updates from sensors, cameras and gate systems so parking is always up to date.</p>
+        </div>
+        <div class="info-box">
+          <h3>Easy management</h3>
+          <p>Use a single dashboard to manage bookings, customer flow, and garage occupancy effortlessly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div class="cta-card">
         <div>
           <p class="eyebrow">Contribute on GitHub</p>
           <h2>Help improve Smart Garage</h2>
-          <p>Fork the project, create a branch, make changes, and submit a pull request.</p>
+          <p>Fork the project, create a branch, make changes, and submit a pull request to enhance the platform.</p>
         </div>
         <a href="README.md" class="btn btn-primary">Read Contribution Guide</a>
       </div>
@@ -98,6 +121,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="Assets/js/script.js"></script>
 </body>
 </html>

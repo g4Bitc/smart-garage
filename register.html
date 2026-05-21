@@ -1,161 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Account</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 20px; 
-            background-color: #fafafa; 
-        }
-        .form-container { 
-            max-width: 450px; 
-            margin: 30px auto; 
-            padding: 25px; 
-            border: 1px solid #ccc; 
-            border-radius: 6px; 
-            background: #fff; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        h2 { 
-            color: #333; 
-            text-align: center; 
-            margin-top: 0;
-            border-bottom: 2px solid #115e59;
-            padding-bottom: 10px;
-        }
-        .form-group { 
-            margin-bottom: 15px; 
-        }
-        .form-row {
-            display: flex;
-            gap: 15px;
-        }
-        .form-row .form-group {
-            flex: 1;
-        }
-        label { 
-            display: block; 
-            margin-bottom: 5px; 
-            font-weight: bold; 
-            font-size: 14px;
-            color: #444;
-        }
-        input, select { 
-            width: 100%; 
-            padding: 10px; 
-            box-sizing: border-box; 
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        .radio-group {
-            display: flex;
-            gap: 20px;
-            padding-top: 5px;
-        }
-        .radio-group label {
-            font-weight: normal;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            cursor: pointer;
-        }
-        .radio-group input[type="radio"] {
-            width: auto;
-            margin: 0;
-        }
-        button { 
-            background-color: #115e59; 
-            color: white; 
-            border: none; 
-            padding: 12px; 
-            width: 100%; 
-            cursor: pointer; 
-            border-radius: 4px; 
-            font-weight: bold; 
-            font-size: 16px;
-            margin-top: 10px;
-        }
-        button:hover { 
-            background-color: #115e59; 
-        }
-        .link-note { 
-            text-align: center; 
-            margin-top: 20px; 
-            font-size: 14px; 
-            line-height: 1.6;
-        }
-        .link-note a { 
-            color: #115e59; 
-            font-weight: bold; 
-            text-decoration: none; 
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Smart Garage</title>
+  <link rel="stylesheet" href="Assets/css/styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Smart<span>Garage</span></a>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="parking.html">Parking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="form-container">
-        <h2>Register Page</h2>
-        <form action="services.html" method="get">
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+  <main>
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Create an account</p>
+          <h1>Register for Smart Garage</h1>
+          <p>Set up your account to manage parking slots, reserve vehicles, and stay connected with the garage system.</p>
+        </div>
+        <div class="hero-panel">
+          <div class="form-card">
+            <form action="services.html" method="get" class="contact-form">
+              <div class="form-row">
+                <div>
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
                 </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                <div>
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
                 </div>
-            </div>
+              </div>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+              <label for="contact">Contact Number</label>
+              <input type="tel" id="contact" name="contact" required />
+              <label for="paymentMethod">Preferred Payment Method</label>
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="mobile_money">Mobile Money</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="digital_wallet">Digital Wallet</option>
+              </select>
+              <label>Gender</label>
+              <div class="form-row">
+                <label><input type="radio" name="gender" value="male" required /> Male</label>
+                <label><input type="radio" name="gender" value="female" required /> Female</label>
+                <label><input type="radio" name="gender" value="other" required /> Other</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up & Proceed</button>
+              <p class="form-note">Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="contact">Contact Number</label>
-                <input type="tel" id="contact" name="contact" placeholder="e.g., +256700000000" required>
-            </div>
-
-            <div class="form-group">
-                <label for="paymentMethod">Preferred Payment Method</label>
-                <select id="paymentMethod" name="paymentMethod" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="mobile_money">Mobile Money</option>
-                    <option value="card">Credit/Debit Card</option>
-                    <option value="digital_wallet">Digital Wallet</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                    <label>
-                        <input type="radio" name="gender" value="male" required> Male
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="female" required> Female
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="other" required> Other
-                    </label>
-                </div>
-            </div>
-
-            <button type="submit">Sign Up & Proceed</button>
-        </form>
-        
-        <p class="link-note">
-            Already have an account? <a href="login.html">Login here</a><br>
-            <a href="services.html">Skip directly to Services Page →</a>
-        </p>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Smart Garage. All rights reserved.</p>
+      <p>Park your car with no worries.</p>
     </div>
+  </footer>
 
+  <script src="Assets/js/script.js"></script>
 </body>
 </html>

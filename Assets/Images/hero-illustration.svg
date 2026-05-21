@@ -1,0 +1,53 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ECFEFF" />
+      <stop offset="100%" stop-color="#E5F7F2" />
+    </linearGradient>
+    <linearGradient id="carGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#3dd5b8" />
+    </linearGradient>
+    <linearGradient id="shadowGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.16)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0)" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" rx="30" fill="url(#bgGradient)" />
+  <path d="M1200 300C1200 134.64 1045.36 0 840 0H360C154.64 0 0 134.64 0 300V800H1200V300Z" fill="#F8FEFF" />
+  <rect x="100" y="120" width="420" height="320" rx="36" fill="#FFFFFF" opacity="0.95" />
+  <path d="M140 240H470" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <path d="M140 300H470" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <path d="M140 360H470" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <rect x="700" y="140" width="360" height="260" rx="32" fill="#ffffff" opacity="0.95" />
+  <circle cx="820" cy="240" r="20" fill="#0f766e" />
+  <circle cx="900" cy="240" r="20" fill="#0f766e" />
+  <path d="M760 430L760 560C760 575.464 772.536 588 788 588H1012C1027.46 588 1040 575.464 1040 560V430H760Z" fill="#ffffff" opacity="0.95" />
+  <path d="M786 530C786 540.493 775.493 550 765 550C754.507 550 744 540.493 744 530C744 519.507 754.507 510 765 510C775.493 510 786 519.507 786 530Z" fill="#0f766e" />
+  <path d="M1040 530C1040 540.493 1029.49 550 1020 550C1010.51 550 1000 540.493 1000 530C1000 519.507 1010.51 510 1020 510C1029.49 510 1040 519.507 1040 530Z" fill="#0f766e" />
+  <path d="M600 380C660 380 700 330 700 280C700 230 660 190 600 190C540 190 500 230 500 280C500 330 540 380 600 380Z" fill="url(#carGradient)" />
+  <path d="M510 270C510 247.91 527.91 230 550 230H650C672.09 230 690 247.91 690 270V300H510V270Z" fill="#ffffff" opacity="0.9" />
+  <path d="M520 340H680" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.9" />
+  <circle cx="545" cy="320" r="20" fill="#ffffff" opacity="0.8" />
+  <circle cx="655" cy="320" r="20" fill="#ffffff" opacity="0.8" />
+  <path d="M520 296L520 280C520 256.91 538.91 238 562 238H638C661.09 238 680 256.91 680 280V296" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.9" />
+  <rect x="550" y="226" width="100" height="56" rx="12" fill="#ffffff" opacity="0.3" />
+  <path d="M400 500H800" stroke="#0f766e" stroke-width="18" stroke-linecap="round" />
+  <path d="M450 540H820" stroke="#0f766e" stroke-width="18" stroke-linecap="round" opacity="0.45" />
+  <path d="M420 180L520 250" stroke="#0f766e" stroke-width="18" stroke-linecap="round" opacity="0.12" />
+  <path d="M760 180L860 250" stroke="#0f766e" stroke-width="18" stroke-linecap="round" opacity="0.12" />
+  <rect x="122" y="520" width="140" height="180" rx="24" fill="#EFFCF6" />
+  <path d="M170 520V700" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6" />
+  <path d="M150 560H190" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <path d="M150 620H190" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <path d="M150 680H190" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <rect x="318" y="520" width="140" height="180" rx="24" fill="#F8FFF6" />
+  <path d="M365 520V700" stroke="#0f766e" stroke-width="16" stroke-linecap="round" opacity="0.6" />
+  <path d="M345 560H385" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <path d="M345 620H385" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <path d="M345 680H385" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <ellipse cx="620" cy="650" rx="340" ry="90" fill="url(#shadowGradient)" />
+  <path d="M640 100C650 94 710 90 740 120C770 150 770 220 740 250" stroke="#0f766e" stroke-width="12" stroke-linecap="round" opacity="0.3" />
+  <path d="M550 90C540 84 470 80 440 110C410 140 410 210 440 240" stroke="#0f766e" stroke-width="12" stroke-linecap="round" opacity="0.3" />
+</svg>

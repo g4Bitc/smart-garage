@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Smart Garage</title>
+  <link rel="stylesheet" href="Assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Smart<span>Garage</span></a>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="parking.html">Parking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Talk to us</p>
+          <h1>Request parking support</h1>
+          <p>Use this form for a demo request, parking inquiry, or project feedback.</p>
+          <div class="contact-panel">
+            <div class="info-box">
+              <h3>Contact information</h3>
+              <p><strong>Email:</strong> info@smartgarage.example</p>
+              <p><strong>Phone:</strong> +256 700 000 000</p>
+              <p><strong>Location:</strong> Kampala, Uganda</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-card">
+            <p class="hero-card-title">Need help fast?</p>
+            <p>Our support team is available to help with setup, parking bookings and system questions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <p class="eyebrow">Send a message</p>
+          <h2>We'll reply as soon as possible</h2>
+          <p class="page-note">Fill in your request below and we will reach out with help for your garage system.</p>
+        </div>
+
+        <form class="form-card contact-form" action="contact.php" method="POST">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <small class="form-note">Note: PHP processing works on a PHP server, not on GitHub Pages.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Smart Garage. All rights reserved.</p>
+      <p>Park your car with no worries.</p>
+    </div>
+  </footer>
+
+  <script src="Assets/js/script.js"></script>
+</body>
+</html>
