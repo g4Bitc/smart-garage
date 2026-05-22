@@ -20,16 +20,159 @@
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
-  </header>
+ <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #fafafa; 
+        }
+        .form-container { 
+            max-width: 450px; 
+            margin: 30px auto; 
+            padding: 25px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            background: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 { 
+            color: #333; 
+            text-align: center; 
+            margin-top: 0;
+            border-bottom: 2px solid #0f766e;
+            padding-bottom: 10px;
+        }
+        .form-group { 
+            margin-bottom: 15px; 
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold; 
+            font-size: 14px;
+            color: #444;
+        }
+        input, select { 
+            width: 100%; 
+            padding: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            padding-top: 5px;
+        }
+        .radio-group label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .radio-group input[type="radio"] {
+            width: auto;
+            margin: 0;
+        }
+        button { 
+            background-color: #0f766e; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            width: 100%; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover { 
+            background-color: #0d5c55; 
+        }
+        .link-note { 
+            text-align: center; 
+            margin-top: 20px; 
+            font-size: 14px; 
+            line-height: 1.6;
+        }
+        .link-note a { 
+            color: #0f766e; 
+            font-weight: bold; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
 
-  <main>
-    <section class="page-hero">
-      <div class="container auth-grid">
-        <div><p class="eyebrow">Create Account</p><h1>Register Page</h1><p class="lead">Sign up and proceed to Smart Garage services.</p></div>
-        <div class="auth-card"><h2>Register Page</h2><form action="services.html" method="get"><div class="form-row"><div><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" required></div><div><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required></div></div><label for="email">Email Address</label><input type="email" id="email" name="email" required><label for="contact">Contact Number</label><input type="tel" id="contact" name="contact" placeholder="e.g., +256700000000" required><label for="paymentMethod">Preferred Payment Method</label><select id="paymentMethod" name="paymentMethod" required><option value="" disabled selected>Select an option</option><option value="mobile_money">Mobile Money</option><option value="card">Credit/Debit Card</option><option value="digital_wallet">Digital Wallet</option></select><label>Gender</label><div class="radio-group"><label><input type="radio" name="gender" value="male" required> Male</label><label><input type="radio" name="gender" value="female" required> Female</label><label><input type="radio" name="gender" value="other" required> Other</label></div><button type="submit" class="btn btn-primary">Sign Up & Proceed</button></form><p class="link-note">Already have an account? <a href="login.html">Login here</a><br><a href="services.html">Skip directly to Services Page →</a></p></div>
-      </div>
-    </section>
-  </main>
+    <div class="form-container">
+        <h2>Register Page</h2>
+        <form action="services.html" method="get">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="e.g., +256700000000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="paymentMethod">Preferred Payment Method</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="mobile_money">Mobile Money</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="digital_wallet">Digital Wallet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" required> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other" required> Other
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Sign Up & Proceed</button>
+        </form>
+        
+        <p class="link-note">
+            Already have an account? <a href="login.html">Login here</a><br>
+            <a href="services.html">Skip directly to Services Page →</a>
+        </p>
+    </div>
+
 
   <footer class="footer">
     <div class="container footer-grid">
