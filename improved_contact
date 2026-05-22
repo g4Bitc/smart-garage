@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Smart Garage</title>
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+    
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      .faq-section {
+        padding: 3.5rem 0 4.5rem;
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .faq-item {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 1.4rem;
+        padding: 1.4rem 1.5rem;
+        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+      }
+      .faq-item h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+      .faq-item p {
+        font-size: 0.9rem;
+      }
+      .contact-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 2rem;
+        padding: 1.8rem;
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.1);
+      }
+      .contact-card h2 {
+        margin-bottom: 0.25rem;
+      }
+      .contact-card .sub {
+        color: var(--muted);
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+      }
+      .field-group {
+        display: grid;
+        gap: 1.2rem;
+      }
+      .field-group label {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        font-weight: 800;
+        color: var(--muted);
+        margin-bottom: 0.3rem;
+        display: block;
+      }
+      .field-group input,
+      .field-group textarea,
+      .field-group select {
+        border-radius: 1rem;
+        border: 1.5px solid var(--border);
+        padding: 0.85rem 1.1rem;
+        font: inherit;
+        font-size: 0.97rem;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+        width: 100%;
+        background: #f8fafc;
+      }
+      .field-group input:focus,
+      .field-group textarea:focus,
+      .field-group select:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px #99f6e4;
+        background: #fff;
+      }
+      .field-group textarea {
+        resize: vertical;
+        min-height: 130px;
+      }
+      .submit-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+      .submit-row small {
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+      .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #ecfeff;
+        width: 38px;
+        height: 38px;
+        border-radius: 999px;
+        margin-right: 0.65rem;
+        transition: all 0.2s;
+        color: var(--primary);
+        font-size: 1.2rem;
+      }
+      .social-links a:hover {
+        background: var(--primary);
+        color: white;
+        transform: scale(1.05);
+      }
+
+      .contact-grid {
+        align-items: start;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="index.html">Smart<span>Garage</span></a>
+        <button class="menu-toggle" aria-label="Open navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="parking.html">Parking</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container contact-grid">
+          <!-- Left Column: Info -->
+          <div>
+            <p class="eyebrow">Get in Touch</p>
+            <h1>We're Here to Help</h1>
+            <p class="lead">
+              Whether you need parking support, want a demo, or have feedback —
+              our team is ready to assist you.
+            </p>
+            <div class="contact-details">
+              <p>
+                <strong><i class="fas fa-envelope"></i> Email:</strong>
+                info@smartgarage.example
+              </p>
+              <p>
+                <strong><i class="fas fa-phone"></i> Phone:</strong> +256 700
+                000 000
+              </p>
+              <p>
+                <strong><i class="fas fa-map-marker-alt"></i> Location:</strong>
+                Kampala, Uganda
+              </p>
+              <!-- Social links -->
+              <div class="social-links" style="margin-top: 1.5rem">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.x.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/256700000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+            <p
+              style="
+                font-size: 0.85rem;
+                margin-top: 1rem;
+                border-left: 3px solid var(--primary);
+                padding-left: 0.8rem;
+              "
+            >
+              <i class="fas fa-shield-alt"></i> 100% data protection — your info
+              stays safe.
+            </p>
+            <!-- Two information cards -->
+            <div class="two-columns" style="margin-top: 2.5rem; gap: 1rem">
+              <div class="card">
+                <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                <p>
+                  Mon - Fri: 7:00 AM - 8:00 PM<br />
+                  Saturday: 8:00 AM - 6:00 PM<br />
+                  Sunday: 9:00 AM - 5:00 PM
+                </p>
+              </div>
+              <div class="card">
+                <h3><i class="fas fa-headset"></i> Support</h3>
+                <p>
+                  Emergency Parking Help:<br />
+                  <strong>+256 700 111 222</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-card">
+            <h2>Send us a message</h2>
+            <p class="sub">
+              Fill in the form — we'll get back to you within one business day.
+            </p>
+            <form action="contact.php" method="POST" novalidate>
+              <div class="field-group">
+                <div class="form-row">
+                  <div>
+                    <label for="fname">First name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="first_name"
+                      placeholder="Enter your first name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="lname">Last name</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      name="last_name"
+                      placeholder="Enter your last name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone"
+                    >Phone number
+                    <span
+                      style="
+                        font-weight: 400;
+                        text-transform: none;
+                        letter-spacing: 0;
+                      "
+                      >(optional)</span
+                    ></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+256 7XX XXX XXX"
+                  />
+                </div>
+                <div>
+                  <label for="reason">What's this about?</label>
+                  <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select a topic…</option>
+                    <option value="parking">Parking reservation</option>
+                    <option value="demo">Request a demo</option>
+                    <option value="billing">Billing question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message">Your message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="How can we help you?"
+                    required
+                  ></textarea>
+                </div>
+                <div class="submit-row">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="padding: 0.9rem 2rem"
+                  >
+                    Send Message
+                  </button>
+                  <small
+                    ><i
+                      class="fas fa-lock"
+                      style="color: var(--primary); margin-right: 0.3rem"
+                    ></i>
+                    Your data is never shared with third parties.</small
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Maps -->
+      <section class="section" style="padding-top: 3rem">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 1.5rem">
+            Find Us Here
+          </h2>
+          <div
+            class="table-wrap"
+            style="border-radius: 1.5rem; overflow: hidden"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7437812971844!2d32.623439474964644!3d0.34994279964660343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc64e3f43b67%3A0x6007ecfb906f37f3!2sKyambogo%20University!5e0!3m2!1sen!2sug!4v1716380000000!5m2!1sen!2sug"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Quick answers</p>
+            <h2>Frequently asked questions</h2>
+            <p class="lead">
+              Can't find what you need? Just send us a message above.
+            </p>
+          </div>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>How do I book a parking slot?</h4>
+              <p>
+                You can book directly through our website or app. Select your
+                preferred dates, choose a slot, and confirm payment. You'll
+                receive a confirmation SMS and email.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Can I cancel or modify my reservation?</h4>
+              <p>
+                Yes. Cancellations made 24 hours before arrival are fully
+                refunded. Modifications can be made up to 6 hours before your
+                scheduled time at no extra cost.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>What payment methods do you accept?</h4>
+              <p>
+                We accept Mobile Money (MTN & Airtel), Visa, Mastercard, and
+                bank transfers. All transactions are encrypted and secure.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Is there 24/7 security at the garage?</h4>
+              <p>
+                Yes. Our facility has round-the-clock CCTV surveillance, manned
+                security personnel, and an automated entry/exit barrier system
+                for every registered vehicle.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Do you offer monthly parking plans?</h4>
+              <p>
+                Absolutely. Monthly subscribers get a dedicated slot, priority
+                support, and a 15% discount compared to daily rates. Contact us
+                to get started.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Can I get a demo for my organization?</h4>
+              <p>
+                Yes — select "Request a demo" in the form above and we'll
+                schedule a free walkthrough of the SmartGarage management system
+                tailored to your team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA strip -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h2 style="color: #fff; margin-bottom: 0.4rem">
+                Ready to park smarter?
+              </h2>
+              <p>Join hundreds of drivers who trust SmartGarage every day.</p>
+            </div>
+            <div class="cta-actions">
+              <a href="parking.html" class="btn btn-primary"
+                >View Parking Slots</a
+              >
+              <a href="login.html" class="btn btn-secondary">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <p>© 2026 Smart Garage. All rights reserved.</p>
+        <p>Park your car with no worries.</p>
+      </div>
+    </footer>
+    <script src="Assets/js/script.js"></script>
+  </body>
+</html>
