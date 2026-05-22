@@ -57,13 +57,33 @@
       <div class="info-box"><h2>Technologies Used</h2><ul class="check-list"><li>Ardino</li><li>Ultrasonic Sensors</li><li>RFID Module</li><li>Servo motor for gate</li><li>CCTV Camera</li><li>Web application</li><li>Database for records</li></ul></div>
     </section>
 
-    <section class="section container">
-      <div class="section-heading"><p class="eyebrow">The Team</p><h2>The Team</h2></div>
-      <div class="team-card">
-        <img src="Assets/Images/Natasha.jpg" alt="Jane Natasha">
-        <div><h3>Jane Natasha</h3><p>In charge of System Design</p></div>
-      </div>
-    </section>
+ <section class="section container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: 24px;">
+  
+  <!-- Heading spans across both columns on desktop -->
+  <div class="section-heading" style="grid-column: 1 / -1;">
+    <p class="eyebrow">The Team</p>
+    <h2>The Team</h2>
+  </div>
+  
+  <!-- Card 1: Natasha -->
+  <div class="team-card" style="display: flex; flex-direction: column; gap: 16px;">
+    <img src="Assets/Images/Natasha.jpg" alt="Jane Natasha" style="width: 100%; height: 300px; object-fit: cover; object-position: top center;">
+    <div>
+      <h3 style="margin: 0 0 4px 0;">Jane Natasha</h3>
+      <p style="margin: 0;">In charge of System Design</p>
+    </div>
+  </div>
+  
+  <!-- Card 2: Moses -->
+  <div class="team-card" style="display: flex; flex-direction: column; gap: 16px;">
+    <img src="Assets/Images/Moses.jpg" alt="Moses Ssebunya" style="width: 100%; height: 300px; object-fit: cover; object-position: top center;">
+    <div>
+      <h3 style="margin: 0 0 4px 0;">Moses Ssebunya</h3>
+      <p style="margin: 0;">In charge of System Implementation</p>
+    </div>
+  </div>
+
+</section>
   </main>
 
   <footer class="footer">
